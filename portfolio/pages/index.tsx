@@ -1,12 +1,19 @@
-
 import { Flex } from '@chakra-ui/react'
+import NavBar from '../components/navbar'
 
+import * as React from 'react'
 
 const IndexPage = () => (
- <Flex alignItems = "center">
-   Hi
-   <Flex height="100" background = "gray">asd</Flex>
- </Flex>
-)
+  <>
+  <NavBar />
+  <Body />
+  </>
+  )
 
 export default IndexPage
+
+const Body = () => (
+  <Flex align="center">
+    Hi there
+  </Flex>
+)
