@@ -31,6 +31,7 @@ import { AiOutlineMenu } from "react-icons/ai";
     function MobileButtons(){
     const mobileNav = useDisclosure();
     const bg = useColorModeValue("white", "gray.800");
+    const router = useRouter()
 
     return (
     <Box display={{ base: "inline-flex", md: "none" }}>
@@ -62,13 +63,19 @@ import { AiOutlineMenu } from "react-icons/ai";
                 aria-label = "Close menu"
                 onClick    = {mobileNav.onClose} 
             />
-            <Button w="full" variant="ghost" >
+
+            <Button w="full" variant="ghost" onClick = {() => {router.push('/')} } 
+            >
+            Home  
+            </Button>
+            <Button w="full" variant="ghost" onClick = {() => {router.push('/about')} } 
+>
                 About me & and my Heros 
             </Button>
-            <Button w="full" variant="ghost">
+            <Button w="full" variant="ghost" onClick = {() => {router.push('/my_path')}} >
                 My Path
             </Button>
-            <Button w="full" variant="ghost">
+            <Button w="full" variant="ghost" onClick = {() => {router.push('/projects')}} >
                 My Projects
             </Button>
         </VStack>
