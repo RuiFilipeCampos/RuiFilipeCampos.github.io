@@ -44,9 +44,7 @@ const KuttyHero = () => {
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.600",'gray.300')}
         >
-        I like building stuff that you can see and interact with, especially interact with.
-        I'm what you may call a polymath, a jack of all trades (but still, a master of one), 
-        a know it all type of guy whose brain is a sponge. 
+        hummmmmm 
         </chakra.p>
         <Stack
         direction={{base:"column",sm:"row"}}
