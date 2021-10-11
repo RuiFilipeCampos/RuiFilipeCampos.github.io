@@ -7,7 +7,6 @@ import * as React from 'react'
 
 const About = () => (
   <>
-  <NavBar />
   This is the about page now !!! 
   </>
   )

@@ -3,19 +3,15 @@ import NavBar from '../components/NavBar'
 
 import * as React from 'react'
 
-const Body = () => (
-  <Heading>Hi there, I'm Rui !</Heading>
-)
+import KuttyHero from '../components/KuttyHero'
+
+
 
 
 const IndexPage = () => (
   <>
-  <NavBar />
-  <Box maxW="1000">
-    <Heading>Hi there, I'm Rui !</Heading>  
-  </Box>
+  <KuttyHero />
   </>
   )
 
 export default IndexPage
-

@@ -35,15 +35,15 @@ import { AiOutlineMenu } from "react-icons/ai";
 
     return (
     <Box display={{ base: "inline-flex", md: "none" }}>
-        <IconButton
-            display={{ base: "flex", md: "none" }}
-            aria-label="Open menu"
-            fontSize="20px"
-            color={useColorModeValue("gray.800", "inherit")}
-            variant="ghost"
-            icon={<AiOutlineMenu />}
-            onClick={mobileNav.onOpen}
-        />
+            <IconButton
+                display={{ base: "flex", md: "none" }}
+                aria-label="Open menu"
+                fontSize="20px"
+                color={useColorModeValue("gray.800", "inherit")}
+                variant="ghost"
+                icon={<AiOutlineMenu />}
+                onClick={mobileNav.onOpen}
+            />
         <VStack
             pos = "absolute"
             display = {mobileNav.isOpen ? "flex" : "none"}
@@ -134,34 +134,34 @@ function DesktopButtons(){
 
 
 export default function NavBar() {
-  const bg = useColorModeValue("white", "gray.800");
+    const bg = useColorModeValue("white", "gray.800");
 
-  return (
-    <React.Fragment>
-      <chakra.header
-        bg={bg}
-        w="full"
-        px={{ base: 2, sm: 4 }}
-        py={4}
-        shadow="md">
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <Flex>
-            <chakra.a
-              href="/"
-              title="Choc Home Page"
-              display="flex"
-              alignItems="center"
-            >
-              <VisuallyHidden>Rui Campos</VisuallyHidden>
-            </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-              Rui Campos
-            </chakra.h1>
-          </Flex>
-            <DesktopButtons />
-            <MobileButtons />
-        </Flex>
-      </chakra.header>
-    </React.Fragment>
-  );
-}
+    return (
+        <React.Fragment>
+            <chakra.header
+            bg={bg}
+            w="full"
+            px={{ base: 2, sm: 4 }}
+            py={4}
+            shadow="md">
+            <Flex alignItems="center" justifyContent="space-between" mx="auto">
+                <Flex>
+                    <chakra.a
+                        href="/"
+                        title="Choc Home Page"
+                        display="flex"
+                        alignItems="center"
+                    >
+                        <VisuallyHidden>Rui Campos</VisuallyHidden>
+                    </chakra.a>
+                    <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+                        Rui Campos
+                    </chakra.h1>
+                </Flex>
+                <DesktopButtons />
+                <MobileButtons />
+            </Flex>
+            </chakra.header>
+        </React.Fragment>
+    );
+};

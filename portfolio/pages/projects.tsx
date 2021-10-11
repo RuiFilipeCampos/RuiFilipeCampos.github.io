@@ -7,7 +7,6 @@ import * as React from 'react'
 
 const MyPath = () => (
   <>
-  <NavBar />
   This is the PROJECTS  page now !!! 
   </>
   )
