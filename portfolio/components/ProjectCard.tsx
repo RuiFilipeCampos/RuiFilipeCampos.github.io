@@ -4,7 +4,7 @@ import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 const ProjectCard = ({name, description} ) => {
   return (
     <Flex
-      bg={useColorModeValue("#F9FAFB", "gray.600")}
+      bg={useColorModeValue("#0000", "white")}
       p={50}
       w="full"
       alignItems="center"
@@ -58,7 +58,7 @@ const ProjectCard = ({name, description} ) => {
               rounded="lg"
               _hover={{ bg: "gray.800" }}
             >
-              Start Now
+              GitHub
             </Link>
           </Box>
         </Box>
