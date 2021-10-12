@@ -155,7 +155,8 @@ export default function NavBar() {
                         <VisuallyHidden>Rui Campos</VisuallyHidden>
                     </chakra.a>
                     <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-                        Rui Campos
+                        Rui Campos |  <b>Warning</b> 🚧: This website is under construction ! 
+
                     </chakra.h1>
                 </Flex>
                 <DesktopButtons />
