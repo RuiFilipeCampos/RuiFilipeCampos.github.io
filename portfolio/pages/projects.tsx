@@ -5,11 +5,11 @@ import * as React from 'react'
 
 
 
-const MyPath = () => (
+const MyProjects = () => (
   <>
   This is the PROJECTS  page now !!! 
   </>
   )
 
-export default MyPath
+export default MyProjects
 

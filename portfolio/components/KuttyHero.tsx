@@ -9,8 +9,10 @@ import {
   Text,
   Icon,
 } from "@chakra-ui/react";
+import { useRouter } from 'next/router'
 
 const KuttyHero = () => {
+  let router = useRouter(); 
   return (
     <Box px={8} py={24} mx="auto">
       <Box
@@ -44,7 +46,7 @@ const KuttyHero = () => {
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.600",'gray.300')}
         >
-        hummmmmm 
+        I like building stuff that you can see and interact with. 
         </chakra.p>
         <Stack
         direction={{base:"column",sm:"row"}}
@@ -53,6 +55,7 @@ const KuttyHero = () => {
           justifyContent={{ sm: "left", md: "center" }}
         >
           <Button
+            onClick = {() => {router.push('/about')}}
             as="a"
             variant="solid"
             colorScheme="brand"
@@ -83,8 +86,9 @@ const KuttyHero = () => {
             mb={{ base: 2, sm: 0 }}
             size="lg"
             cursor="pointer"
+            onClick = {() => {router.push('/projects')}}
           >
-            You just wanna see my cool projects :)
+            Take me to your cool projects :)
             <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"
