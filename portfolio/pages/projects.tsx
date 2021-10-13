@@ -26,6 +26,7 @@ const MyProjects = () => (
         temporibus enim expedita aperiam mollitia iure consectetur dicta \
         tenetur, porro consequuntur saepe accusantium consequatur. \
         "
+        img_url = ""
         />
       <ProjectCard 
         name = "JS Game Engine"
@@ -34,6 +35,7 @@ const MyProjects = () => (
         temporibus enim expedita aperiam mollitia iure consectetur dicta \
         tenetur, porro consequuntur saepe accusantium consequatur. \
         "
+        img_url = ""
         />
   </div>
   </>
