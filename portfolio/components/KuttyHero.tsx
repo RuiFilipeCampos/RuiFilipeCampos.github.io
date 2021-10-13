@@ -109,8 +109,8 @@ const KuttyHero = () => {
           w="full"
           rounded="lg"
           shadow="2xl"
-          src="https://media-exp1.licdn.com/dms/image/C4E2DAQFg8KEnZeV3OQ/profile-treasury-image-shrink_1280_1280/0/1628385373591?e=1634072400&v=beta&t=-wieGv1hradwh8-1MlN558u-wBxnmWb4L3DZzC2d4mI"
-          alt="Hellonext feedback boards software screenshot"
+          src="https://i.imgur.com/VypByLk.png"
+          alt="A drawing of mine."
         />
       </Box>
     </Box>

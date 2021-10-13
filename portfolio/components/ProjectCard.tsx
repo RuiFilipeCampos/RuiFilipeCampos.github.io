@@ -1,5 +1,48 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import { chakra, Box, Flex, Icon, useColorModeValue, Link } from "@chakra-ui/react";
+
+
+import github_icon from '../pages/github_icon.png'; 
+
+
+const GitHubButton = () => {
+
+
+return ( 
+<Box mt={8} padding = "1">
+    <Link
+      bg="gray.900"
+      color="gray.100"
+      px={5}
+      py={3}
+      fontWeight="semibold"
+      rounded="lg"
+      _hover={{ bg: "gray.800" }}
+    >
+        <Icon
+          boxSize={6}
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        > 
+           <img src = {github_icon.src}></img>
+           <path d= {github_icon.src} ></path>
+        </Icon>
+        <img src = {github_icon.src} width="25" height="0"></img>
+        GitHub
+    </Link>
+</Box>
+)
+}
+
+
+
+
+
+
 
 const ProjectCard = ({name, description} ) => {
   return (
@@ -46,21 +89,23 @@ const ProjectCard = ({name, description} ) => {
             <div dangerouslySetInnerHTML = {  {__html:description}  } />
             <br></br>
           </chakra.p>
-
-          <Box mt={8}>
-            <Link
-              
-              bg="gray.900"
-              color="gray.100"
-              px={5}
-              py={3}
-              fontWeight="semibold"
-              rounded="lg"
-              _hover={{ bg: "gray.800" }}
-            >
-              GitHub
-            </Link>
-          </Box>
+              <Flex>
+                  <Box mt={8} padding="1">
+                    <Link
+                      
+                      bg="gray.900"
+                      color="gray.100"
+                      px={5}
+                      py={3}
+                      fontWeight="semibold"
+                      rounded="lg"
+                      _hover={{ bg: "gray.800" }}
+                    >
+                      More about this!
+                    </Link>
+                  </Box>
+                  <GitHubButton />
+              </Flex>
         </Box>
       </Box>
     </Flex>
