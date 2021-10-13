@@ -3,7 +3,7 @@ import { chakra, Box, Flex, Icon, useColorModeValue, Link } from "@chakra-ui/rea
 
 
 import github_icon from '../pages/github_icon.png'; 
-
+import el from './el12.gif'
 
 const GitHubButton = () => {
 
@@ -44,7 +44,7 @@ return (
 
 
 
-const ProjectCard = ({name, description} ) => {
+const ProjectCard = ({name, description, img_url} ) => {
   return (
     <Flex
       bg={useColorModeValue("#0000", "white")}
@@ -68,11 +68,11 @@ const ProjectCard = ({name, description} ) => {
             bgSize="cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')",
-            }}
+              "url('" + img_url  + " ')", 
+                   }}
           ></Box>
         </Box>
-
+          
         <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
           <chakra.h2
             fontSize={{ base: "2xl", md: "3xl" }}
