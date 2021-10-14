@@ -20,7 +20,7 @@ const MyProjects = () => (
         img_url = "https://i.imgur.com/JNaSDw8.png?1"
         />
       <ProjectCard 
-        name = "BrownianMotionAndroid"
+        name = "game.js"
         description = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem \
         modi reprehenderit vitae exercitationem aliquid dolores ullam \
         temporibus enim expedita aperiam mollitia iure consectetur dicta \
@@ -29,7 +29,7 @@ const MyProjects = () => (
         img_url = ""
         />
       <ProjectCard 
-        name = "JS Game Engine"
+        name = "topicorg"
         description = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem \
         modi reprehenderit vitae exercitationem aliquid dolores ullam \
         temporibus enim expedita aperiam mollitia iure consectetur dicta \

@@ -1,9 +1,7 @@
 import React from "react";
 import { chakra, Box, Flex, Icon, useColorModeValue, Link } from "@chakra-ui/react";
 
-
-import github_icon from '../pages/github_icon.png'; 
-import el from './el12.gif'
+import {VscGithub} from "react-icons/vsc"
 
 const GitHubButton = () => {
 
@@ -27,11 +25,9 @@ return (
           strokeWidth="2"
           viewBox="0 0 24 24"
           stroke="currentColor"
-        > 
-           <img src = {github_icon.src}></img>
-           <path d= {github_icon.src} ></path>
+        > ´
+          <VscGithub />
         </Icon>
-        <img src = {github_icon.src} width="25" height="0"></img>
         GitHub
     </Link>
 </Box>
