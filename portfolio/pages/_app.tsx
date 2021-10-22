@@ -19,7 +19,7 @@ const colors = {
   };
   const config = {
     initialColorMode: "white",
-    useSystemColorMode: false
+    useSystemColorMode: true
   };
   
   const theme = extendTheme({ colors, config });
