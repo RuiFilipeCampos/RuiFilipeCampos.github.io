@@ -29,7 +29,6 @@ const colors = {
 export default function App( { Component, pageProps} ){
     return (
         <ChakraProvider theme={theme}>
-            <NavBar />
             <Component {...pageProps} />
         </ChakraProvider>
     )
